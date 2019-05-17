@@ -1,0 +1,8 @@
+sudo: false
+dist: xenial 
+# Enable C++ support
+language: cpp
+script:
+  - mkdir build
+  - cd build
+  - cmake .. && make -j8
