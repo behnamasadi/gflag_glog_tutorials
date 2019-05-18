@@ -23,6 +23,7 @@ install:
 # Enable C++ support
 language: cpp
 script:
+  - cd ~
   - mkdir build
   - cd build
   - cmake .. && make -j8
