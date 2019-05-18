@@ -1,5 +1,25 @@
-sudo: false
-dist: xenial 
+dist: xenial
+#before_install:
+#  - sudo apt-get install -y libgflags-dev libgoogle-glog-dev
+#addons:
+#  apt:
+#    update: true 
+
+install:
+#  - wget https://protobuf.googlecode.com/files/protobuf-2.4.1.tar.gz
+  - git clone https://github.com/gflags/gflags
+  - cd gflags
+  - mkdir build
+  - cd build
+  - cmake -DCMAKE_CXX_FLAGS=-std=c++11 -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX:PATH=~/usr .. && make -j8 all install 
+
+
+  - git clone https://github.com/google/glog
+  - cd glog
+  - mkdir build
+  - cd build
+  - cmake -DCMAKE_CXX_FLAGS=-std=c++11 -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX:PATH=~/usr .. && make -j8 all install 
+
 # Enable C++ support
 language: cpp
 script:
