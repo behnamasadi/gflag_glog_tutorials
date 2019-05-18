@@ -24,7 +24,9 @@ install:
 language: cpp
 script:
   - cd ~
-  - rm -rf *
+  - rm -rf gflags
+  - rm -rf glog
+  - rm -rf build
   - git clone https://github.com/behnamasadi/gflag_glog_tutorials/
   - cd gflag_glog_tutorials
   - mkdir build
