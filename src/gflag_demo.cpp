@@ -1,27 +1,10 @@
 //https://github.com/gflags/gflags/issues/43
-
 #define STRIP_FLAG_HELP 1
 #include <gflags/gflags.h>
 #include <string>
 #include <iostream>
 #include <cstdint>
 /*
-https://gflags.github.io/gflags/
-
-grep -l -f /var/tmp/foo johannes brahms
-Commandline flags: start with - for example -l or -f
-commandline arguments: are parameters of flag for example: /var/tmp/foo
-
-
-DEFINE_bool: boolean
-DEFINE_int32: 32-bit integer
-DEFINE_int64: 64-bit integer
-DEFINE_uint64: unsigned 64-bit integer
-DEFINE_double: double
-DEFINE_string: C++ string
-
-DEFINE_<variable_type>(name, default_value, "help text");
-
 you can pass the flags like any of these:
 ./main --languages="chinese,japanese,korean"
 ./main -languages="chinese,japanese,korean"
