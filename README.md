@@ -100,6 +100,7 @@ For the boolean flag `DEFINE_bool(big_menu, true, "Include 'advanced' options in
 ### Special Flags
 
 There are a few flags defined by the commandlineflags module itself. to see the complete list just use `--help`
+
 1) Reporting flags:
 - --help
 - --helpxml
@@ -107,10 +108,13 @@ There are a few flags defined by the commandlineflags module itself. to see the 
 2) Flags that affect how other flags are parsed:
 - --undefok=flagname,flagname
 
-for those names listed as the argument to --undefok, suppress the normal error-exit that occurs when --name is seen on the commandline, but name has not been DEFINED anywhere in the application
+For those names listed as the argument to --undefok, suppress the normal error-exit that occurs when --name is seen on the commandline, but name has not been DEFINED anywhere in the application
 
 3) Recursive Flags:
-cause other flag values to be set: `--fromenv`, `--tryfromenv`, `--flagfile`.
+cause other flag values to be set: 
+- --fromenv
+- --tryfromenv
+- --flagfile
 
 
 
@@ -119,6 +123,7 @@ cause other flag values to be set: `--fromenv`, `--tryfromenv`, `--flagfile`.
 <small><i>TOC generated with <a href='http://ecotrust-canada.github.io/markdown-toc/'>markdown-toc</a></i></small>
 
 Refs:  [1](https://gflags.github.io/gflags/)
+
 [![Build Status](https://travis-ci.com/behnamasadi/gflag_glog_tutorials.svg?branch=master)](https://travis-ci.com/behnamasadi/gflag_glog_tutorials)
 ![alt text](https://img.shields.io/badge/license-BSD-blue.svg)
 
