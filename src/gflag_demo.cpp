@@ -5,17 +5,8 @@
 #include <iostream>
 #include <cstdint>
 /*
-you can pass the flags like any of these:
-./main --languages="chinese,japanese,korean"
-./main -languages="chinese,japanese,korean"
-./main --languages "chinese,japanese,korean"
-./main -languages "chinese,japanese,korean"
 
-For boolean flags, the possibilities are slightly different:
-./main --big_menu
-./main --nobig_menu
-./maino --big_menu=true
-./main --big_menu=false
+
 
 */
 
