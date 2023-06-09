@@ -10,6 +10,25 @@
 
 # Google Falgs and Google Log Tutorials
 This repository contains my tutorials code for using Google Falgs and Google Log in my c++ projects.  
+## Installation
+
+gflags
+```
+git clone https://github.com/gflags/gflags
+cd gflags
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX:PATH=~/usr 
+cmake --build build -j8
+cmake --install build 
+```
+glog
+
+```
+git clone https://github.com/google/glog
+cd glog
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX:PATH=~/usr 
+cmake --build build -j8
+cmake --install build 
+```
 
 
 ## Google Falgs
