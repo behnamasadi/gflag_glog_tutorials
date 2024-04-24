@@ -1,4 +1,7 @@
 - [Google Falgs and Google Log Tutorials](#google-falgs-and-google-log-tutorials)
+    + [Command](#command)
+    + [Option](#option)
+  * [Installation](#installation)
   * [Google Falgs](#google-falgs)
     + [Commandline Flag and Commandline Argument](#commandline-flag-and-commandline-argument)
     + [Defining Flags In Program](#defining-flags-in-program)
@@ -9,7 +12,23 @@
   * [Google Log](#google-log)
 
 # Google Falgs and Google Log Tutorials
-This repository contains my tutorials code for using Google Falgs and Google Log in my c++ projects.  
+This repository contains my tutorial code for using Google Falgs and Google Log in my C++ projects.  
+In the context of command-line interfaces, such as those used in Git, UNIX, and other systems, the terms "command" and "option" have specific meanings and roles:
+
+### Command
+A **Commands** are the core instructions to be executed. For example, in the command-line instruction `git commit`, `git` is the program being called, and `commit` is the command telling the program to record changes to the repository.
+
+Commands can stand alone without options, although their behavior will be the default configuration set by the program.
+
+### Option
+An **option** (sometimes called a "flag" or "switch") modifies the behavior of a command. Options are additional specifiers that tell the command how to operate differently from its default behavior. They can be short (preceded by a single hyphen, `-`) or long (preceded by a double hyphen, `--`). For example:
+
+- In `git commit -m "Your message"`, `-m` is a short option for `--message` that tells `git commit` to immediately follow with a commit message, which is provided in quotes.
+- In `ls -l`, `-l` is an option for the `ls` command that modifies the output to be detailed (long listing format).
+
+Options typically require a hyphen (`-`) or double hyphen (`--`) to distinguish them from the command or other types of input like filenames or other parameters. They can also sometimes require or allow additional values to be set, like in `-m "Your message"` where `"Your message"` is the value associated with the `-m` option.
+
+
 ## Installation
 
 gflags
