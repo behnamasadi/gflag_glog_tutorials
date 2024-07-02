@@ -161,8 +161,6 @@ cause other flag values to be set:
 
 ## Google Logging Library (glog)
 
-<small><i>TOC generated with <a href='http://ecotrust-canada.github.io/markdown-toc/'>markdown-toc</a></i></small>
-
 Refs:  [1](https://gflags.github.io/gflags/)
 
 [![Build Status](https://travis-ci.com/behnamasadi/gflag_glog_tutorials.svg?branch=master)](https://travis-ci.com/behnamasadi/gflag_glog_tutorials)
@@ -173,6 +171,3 @@ Refs:  [1](https://gflags.github.io/gflags/)
 - [log4cplus](https://github.com/log4cplus/log4cplus)
 - [easylogging c++](https://github.com/abumq/easyloggingpp)
 - [spdlog](https://github.com/gabime/spdlog)
-
-
-
